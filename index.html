@@ -8,75 +8,92 @@
 </head>
 <body>
   <a-scene>
-    <!-- Sol en bleu marine -->
-    <a-plane position="0 0 -10" rotation="-90 0 0" width="40" height="40" color="#001f3f"></a-plane>
+    <!-- Sol avec texture -->
+    <a-plane position="0 0 -10" rotation="-90 0 0" width="40" height="40" src="textures/sol-texture.jpg" repeat="10 10"></a-plane>
 
-    <!-- Mur d'exposition avant en taupe -->
-    <a-box position="0 1 -6" width="18" height="6" depth="0.5" color="#b38b6d"></a-box>
+    <!-- Mur avant avec texture -->
+    <a-box position="0 1 -6" width="18" height="6" depth="0.5" src="textures/mur-texture.jpg" repeat="4 2"></a-box>
 
-    <!-- Images avec cadres et descriptions (face avant) -->
+    <!-- Images avec cadres noirs et descriptions (face avant) -->
     <!-- Rangée du haut -->
-    <a-box position="-7 3 -5.1" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="-7 3 -5.1" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image1.jpg" position="-7 3 -5" width="2" height="2" onclick="showDescription('description1')"></a-image>
     <a-text id="description1" value="Image 1 - DALL-E" position="-7 2 -5" visible="false"></a-text>
 
-    <a-box position="-4 3 -5.1" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="-4 3 -5.1" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image2.jpg" position="-4 3 -5" width="2" height="2" onclick="showDescription('description2')"></a-image>
     <a-text id="description2" value="Image 2 - DALL-E" position="-4 2 -5" visible="false"></a-text>
 
-    <a-box position="-1 3 -5.1" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="-1 3 -5.1" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image3.jpg" position="-1 3 -5" width="2" height="2" onclick="showDescription('description3')"></a-image>
     <a-text id="description3" value="Image 3 - DALL-E" position="-1 2 -5" visible="false"></a-text>
 
-    <a-box position="2 3 -5.1" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="2 3 -5.1" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image4.jpg" position="2 3 -5" width="2" height="2" onclick="showDescription('description4')"></a-image>
     <a-text id="description4" value="Image 4 - DALL-E" position="2 2 -5" visible="false"></a-text>
 
-    <a-box position="5 3 -5.1" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="5 3 -5.1" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image5.jpg" position="5 3 -5" width="2" height="2" onclick="showDescription('description5')"></a-image>
     <a-text id="description5" value="Image 5 - DALL-E" position="5 2 -5" visible="false"></a-text>
 
     <!-- Rangée du milieu -->
-    <a-box position="-7 1 -5.1" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="-7 1 -5.1" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image6.jpg" position="-7 1 -5" width="2" height="2" onclick="showDescription('description6')"></a-image>
     <a-text id="description6" value="Image 6 - DALL-E" position="-7 0 -5" visible="false"></a-text>
 
-    <a-box position="-4 1 -5.1" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="-4 1 -5.1" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image7.jpg" position="-4 1 -5" width="2" height="2" onclick="showDescription('description7')"></a-image>
     <a-text id="description7" value="Image 7 - DALL-E" position="-4 0 -5" visible="false"></a-text>
 
-    <a-box position="-1 1 -5.1" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="-1 1 -5.1" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image8.jpg" position="-1 1 -5" width="2" height="2" onclick="showDescription('description8')"></a-image>
     <a-text id="description8" value="Image 8 - DALL-E" position="-1 0 -5" visible="false"></a-text>
 
-    <a-box position="2 1 -5.1" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="2 1 -5.1" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image9.jpg" position="2 1 -5" width="2" height="2" onclick="showDescription('description9')"></a-image>
     <a-text id="description9" value="Image 9 - DALL-E" position="2 0 -5" visible="false"></a-text>
 
-    <a-box position="5 1 -5.1" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="5 1 -5.1" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image10.jpg" position="5 1 -5" width="2" height="2" onclick="showDescription('description10')"></a-image>
     <a-text id="description10" value="Image 10 - DALL-E" position="5 0 -5" visible="false"></a-text>
 
-    <!-- Mur d'exposition arrière en taupe -->
-    <a-box position="0 1 3" width="18" height="6" depth="0.5" color="#b38b6d"></a-box>
+    <!-- Mur d'exposition arrière avec texture -->
+    <a-box position="0 1 3" width="18" height="6" depth="0.5" src="textures/mur-texture.jpg" repeat="4 2"></a-box>
 
-    <!-- Images avec cadres et descriptions (face arrière) légèrement en avant du mur) -->
-    <a-box position="-7 3 3.5" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <!-- Images avec cadres noirs et descriptions (face arrière) légèrement en avant du mur -->
+    <a-box position="-7 3 3.5" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image11.jpg" position="-7 3 3.6" width="2" height="2" onclick="showDescription('description11')"></a-image>
     <a-text id="description11" value="Image 11 - DALL-E" position="-7 2 3.6" visible="false"></a-text>
 
-    <a-box position="-4 3 3.5" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="-4 3 3.5" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image12.jpg" position="-4 3 3.6" width="2" height="2" onclick="showDescription('description12')"></a-image>
     <a-text id="description12" value="Image 12 - DALL-E" position="-4 2 3.6" visible="false"></a-text>
 
-    <a-box position="-1 3 3.5" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="-1 3 3.5" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image13.jpg" position="-1 3 3.6" width="2" height="2" onclick="showDescription('description13')"></a-image>
     <a-text id="description13" value="Image 13 - DALL-E" position="-1 2 3.6" visible="false"></a-text>
 
-    <a-box position="2 3 3.5" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="2 3 3.5" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image14.jpg" position="2 3 3.6" width="2" height="2" onclick="showDescription('description14')"></a-image>
     <a-text id="description14" value="Image 14 - DALL-E" position="2 2 3.6" visible="false"></a-text>
 
-    <a-box position="5 3 3.5" width="2.2" height="2.2" depth="0.1" color="#222222"></a-box>
+    <a-box position="5 3 3.5" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
     <a-image src="images/image15.jpg" position="5 3 3.6" width="2" height="2" onclick="showDescription('description15')"></a-image>
-    <a-text id="description15" value="Image 15 - DALL-E" position="
+    <a-text id="description15" value="Image 15 - DALL-E" position="5 2 3.6" visible="false"></a-text>
+
+    <!-- Ciel avec texture -->
+    <a-sky src="textures/ciel-texture.jpg"></a-sky>
+
+    <!-- Lumières et caméra -->
+    <a-light type="ambient" color="#888"></a-light>
+    <a-entity camera look-controls wasd-controls position="0 1.6 10"></a-entity>
+  </a-scene>
+
+  <script>
+    function showDescription(id) {
+      const description = document.getElementById(id);
+      description.setAttribute('visible', !description.getAttribute('visible'));
+    }
+  </script>
+</body>
+</html>
