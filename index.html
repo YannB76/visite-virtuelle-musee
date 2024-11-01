@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visite Virtuelle du Musée</title>
+
+  <!-- Bibliothèque A-Frame principale -->
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-  <!-- A-Frame Extras pour ajouter des contrôles tactiles et autres fonctionnalités -->
+
+  <!-- A-Frame Extras pour ajouter des contrôles tactiles -->
   <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
 </head>
 <body>
@@ -80,22 +83,4 @@
     <a-text id="description14" value="Image 14 - DALL-E" position="2 2 3.6" visible="false"></a-text>
 
     <a-box position="5 3 3.5" width="2.2" height="2.2" depth="0.1" color="#000000"></a-box>
-    <a-image src="images/image15.jpg" position="5 3 3.6" width="2" height="2" onclick="showDescription('description15')"></a-image>
-    <a-text id="description15" value="Image 15 - DALL-E" position="5 2 3.6" visible="false"></a-text>
-
-    <!-- Ciel avec texture -->
-    <a-sky src="textures/ciel-texture.jpg"></a-sky>
-
-    <!-- Lumières et caméra -->
-    <a-light type="ambient" color="#888"></a-light>
-    <a-entity camera look-controls wasd-controls position="0 1.6 10"></a-entity>
-  </a-scene>
-
-  <script>
-    function showDescription(id) {
-      const description = document.getElementById(id);
-      description.setAttribute('visible', !description.getAttribute('visible'));
-    }
-  </script>
-</body>
-</html>
+    <a-image src
